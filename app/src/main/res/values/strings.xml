@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Stickies</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="title_activity_post_list">PostListActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="new_post">New Post</string>
+    <string name="save_button">Add</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
