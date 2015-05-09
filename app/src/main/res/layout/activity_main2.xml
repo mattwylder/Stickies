@@ -4,9 +4,9 @@
     tools:context="us.wylder.stickies.MainActivity" tools:ignore="MergeRootFrame" >
 
     <ListView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/list_posts"
-        android:layout_gravity="center"
+        android:layout_gravity="top"
         android:headerDividersEnabled="true" />
 </FrameLayout>

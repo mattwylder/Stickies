@@ -45,6 +45,15 @@ public class PostCursorAdapter extends CursorAdapter{
         }
         sampleText.setText(name);
     }
+
+
+    public void clearAll(){
+
+        Cursor temp = getCursor();
+        changeCursor(temp);
+        notifyDataSetChanged();
+        Log.d(TAG, "ClearAll Dataset change notified");
+    }
 }
 
 

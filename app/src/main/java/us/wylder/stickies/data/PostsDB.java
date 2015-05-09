@@ -50,7 +50,7 @@ public class PostsDB extends SQLiteOpenHelper{
         Log.v("TAG", "OnCreating");
         db.execSQL(SQL_CREATE_POSTS);
         Log.v("PostsDB", "Created table");
-        addPost("This is the first post");
+       // addPost("This is the first post");
     }
 
     @Override
@@ -69,6 +69,20 @@ public class PostsDB extends SQLiteOpenHelper{
         SQLiteDatabase db = this.getReadableDatabase();
 
         return db.insert(DB_POSTS_TABLE_NAME, null, values);
+    }
+
+    public void clearAll(){
+        SQLiteDatabase db = this.getReadableDatabase();
+
+        db.execSQL(SQL_DROP_POSTS);
+        db.execSQL(SQL_CREATE_POSTS);
+    }
+
+    public int getNumPosts(){
+        Cursor c = getCursor();
+        int count = c.getCount();
+
+        return count;
     }
 
     public Cursor getCursor(){
